@@ -1,5 +1,5 @@
 const SSDP = require('node-ssdp').Client
-    , ssdpClient = new SSDP();
+    , ssdpClient = new SSDP({explicitSocketBind: true});
 const http = require("http");
 const xml2js = require("xml2js");
 const UPNP = require("upnp-device-client");
